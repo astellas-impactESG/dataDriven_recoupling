@@ -31,11 +31,6 @@ The empirical pipeline consists of three stages:
 │   └── 3_fixed_effects.R     # Fixed-effects panel regression + AME estimation
 ├── data/
 │   └── README_data.md        # Data documentation (see Data Availability)
-├── results/
-│   └── .gitkeep              # SHAP summary plot saved here at runtime
-└── figure/
-    └── ice/
-        └── .gitkeep          # ICE plots saved here at runtime
 ```
 
 ---

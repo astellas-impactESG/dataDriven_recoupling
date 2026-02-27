@@ -30,7 +30,7 @@ The empirical pipeline consists of three stages:
 │   ├── 2_ice_simulation.py   # ICE curve simulation for a focal firm
 │   └── 3_fixed_effects.R     # Fixed-effects panel regression + AME estimation
 ├── data/
-│   └── README_data.md        # Data documentation (see Data Availability)
+    └── README_data.md        # Data documentation (see Data Availability)
 ```
 
 ---

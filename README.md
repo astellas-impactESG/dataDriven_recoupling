@@ -1,6 +1,6 @@
 # Replication Package for "Data-Driven Re-Coupling: An Embedded Case Study of Astellas Pharma's Journey to Substantive Legitimacy"
 
-**Authors:** Daisuke Kato, Keigo Tanabe, Yohsuke Hagiwara, Shintaro Omuro, Shingo Iino, Takehiro Metoki  
+**Authors:** Daisuke Kato, Takehiro Metoki, Keigo Tanabe, Yohsuke Hagiwara, Shintaro Omuro, Shingo Iino
 **Affiliations:** Astellas Pharma Inc. (Sustainability; Digital X); Waseda University, Graduate School of Accountancy  
 
 ---

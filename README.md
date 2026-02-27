@@ -1,7 +1,7 @@
 # Replication Package for "Data-Driven Re-Coupling: An Embedded Case Study of Astellas Pharma's Journey to Substantive Legitimacy"
 
-**Authors:** Daisuke Kato, Takehiro Metoki, Keigo Tanabe, Yohsuke Hagiwara, Shintaro Omuro, Shingo Iino
-**Affiliations:** Astellas Pharma Inc. (Sustainability; Digital X); Waseda University, Graduate School of Accountancy  
+**Authors:** Daisuke Kato, Takehiro Metoki, Keigo Tanabe, Yohsuke Hagiwara, Shintaro Omuro, Shingo Iino  
+**Affiliations:** Astellas Pharma Inc. (Sustainability; Digital X); Waseda University, Graduate School of Accountancy
 
 ---
 
@@ -23,6 +23,8 @@ The empirical pipeline consists of three stages:
 .
 ├── README.md
 ├── LICENSE
+├── requirements.txt          # Python dependencies
+├── requirements_R.txt        # R dependencies
 ├── code/
 │   ├── 1_shap_analysis.py    # XGBoost + SHAP (contribution & predictive analysis)
 │   ├── 2_ice_simulation.py   # ICE curve simulation for a focal firm
@@ -39,13 +41,7 @@ The empirical analysis uses the **TERRAST** dataset (Tokyo Stock Exchange Prime 
 
 **The raw data cannot be redistributed** due to the data provider's terms of service. Researchers wishing to replicate the analysis should contact TERRAST directly to obtain access.
 
-A data dictionary describing all variables used is provided in [`data/README_data.md`](data/README_data.md).
-
-To run the code, place the licensed dataset at:
-
-```
-data/toshoPrime_2013-2023_en.csv
-```
+To run the code, place the licensed dataset in the data folder.
 
 ---
 
@@ -53,32 +49,36 @@ data/toshoPrime_2013-2023_en.csv
 
 ### Python (scripts 1–2)
 
-- Python ≥ 3.10
-- See `requirements.txt` for full dependency list
-
-Install dependencies:
+Tested on Python 3.13.12. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+| Package | Version |
+|---|---|
+| matplotlib | 3.10.8 |
+| matplotlib-inline | 0.2.1 |
+| numpy | 2.3.5 |
+| pandas | 3.0.0 |
+| scikit-learn | 1.8.0 |
+| shap | 0.50.0 |
+| xgboost | 3.2.0 |
+
 ### R (script 3)
 
-- R ≥ 4.3
-- Key packages: `fixest`, `marginaleffects`, `tidyverse`
-
-Install dependencies (recommended via `renv`):
-
-```r
-install.packages("renv")
-renv::restore()
-```
-
-Or install manually:
+Tested on R 4.4.2. See `requirements_R.txt` for the full dependency list. Install dependencies manually:
 
 ```r
 install.packages(c("tidyverse", "conflicted", "fixest", "marginaleffects"))
 ```
+
+| Package | Version |
+|---|---|
+| conflicted | 1.2.0 |
+| fixest | 0.12.1 |
+| marginaleffects | 0.28.0 |
+| tidyverse | 2.0.0 |
 
 ---
 
